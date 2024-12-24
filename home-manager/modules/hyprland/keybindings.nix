@@ -103,6 +103,7 @@
       "$mainMod, XF86AudioPause, exec, playerctl play-pause"
       "$mainMod, XF86AudioNext, exec, playerctl next"
       "$mainMod, XF86AudioPrev, exec, playerctl previous"
+",switch:Lid Switch,exec,hyprlock"
     ];
 
     bindel = [

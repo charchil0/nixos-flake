@@ -174,7 +174,7 @@
 
       device = {
         name = "dell0c3c:01-06cb:ce26-touchpad";
-        enabled = 1;
+        enabled = true;
       };
 
       gestures = {
@@ -318,6 +318,7 @@ env = QT_AUTO_SCREEN_SCALE_FACTOR,1
 env = MOZ_ENABLE_WAYLAND,1
 env = GDK_SCALE,1
 env = export MANPAGER,'nvim +Man!'
+env = export MOUSE,0
 
 
 
