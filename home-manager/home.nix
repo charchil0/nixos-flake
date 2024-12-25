@@ -16,8 +16,7 @@
     ./modules/fastfetch.nix
     ./modules/tmux.nix
     ./modules/hyprland/default.nix
-    #./modules/p10k.nix
-    #./modules/dunst.nix
+    ./modules/rofi.nix
   ];
   home.stateVersion = "24.11";
   home.packages = with pkgs;[

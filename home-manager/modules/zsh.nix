@@ -111,11 +111,11 @@ in
     # Environment variables and shell settings
   };
 
-  home.sessionVariables = {
-    GEM_HOME = "$HOME/.gem";
-    MANPAGER = "nvim +Man!";
-    EDITOR = "nvim";
-  };
+  # home.sessionVariables = {
+  #   GEM_HOME = "$HOME/.gem";
+  #   MANPAGER = "nvim +Man!";
+  #   EDITOR = "nvim";
+  # };
 
   programs.oh-my-posh = {
     enable = false;

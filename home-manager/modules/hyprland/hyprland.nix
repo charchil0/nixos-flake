@@ -90,7 +90,7 @@
       misc = {
         vrr = 0;
         disable_hyprland_logo = true;
-        disable_splash_rendering = false;
+        disable_splash_rendering = true;
         force_default_wallpaper = 0;
         animate_manual_resizes = true;
         animate_mouse_windowdragging = true;
@@ -317,8 +317,8 @@ env = QT_WAYLAND_DISABLE_WINDOWDECORATION,1
 env = QT_AUTO_SCREEN_SCALE_FACTOR,1
 env = MOZ_ENABLE_WAYLAND,1
 env = GDK_SCALE,1
-env = export MANPAGER,'nvim +Man!'
-env = export MOUSE,0
+#env = MANPAGER,'nvim +Man!'
+env = MOUSE,"0"
 
 
 

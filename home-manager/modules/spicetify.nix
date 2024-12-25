@@ -24,16 +24,26 @@ in
     hidePodcasts
     shuffle # shuffle+ (special characters are sanitized out of extension names)
   ];
-  # enabledCustomApps = with spicePkgs.apps; [
-  #   newReleases
-  #   ncsVisualizer
-  # ];
-  # enabledSnippets = with spicePkgs.snippets; [
-  #   rotating-coverart
-  #   pointer
-  # ];
-  #
-  theme = spicePkgs.themes.ziro;
-  colorScheme = "purple-dark";
+  enabledCustomApps = with spicePkgs.apps; [
+    newReleases
+    ncsVisualizer
+  ];
+  enabledSnippets = with spicePkgs.snippets; [
+    #rotating-cover-art
+    pointer
+  ];
+
+  # theme = spicePkgs.themes.ziro;
+  # colorScheme = "purple-dark";
+
+   # theme = spicePkgs.themes.dribbblish;
+   # #colorScheme = "gruvbox";
+   # colorScheme = "purple";
+
+   # theme = spicePkgs.themes.starryNight;
+   # colorScheme = "forest";
+
+    theme = spicePkgs.themes.sleek;
+    colorScheme = "elementary";
   };
 }
