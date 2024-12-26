@@ -31,16 +31,16 @@
     # gruvbox-dark-icons-gtk;
     };
     cursorTheme = {
-      name = "Bibata-Original-Ice";
+      name = "Bibata-Modern-Ice";
       package = pkgs.bibata-cursors;
-      size = 23;
+      size = 20;
     };
   };
 
   home.pointerCursor = {
-    name = "Bibata-Original-Ice";
+    name = "Bibata-Modern-Ice";
     package = pkgs.bibata-cursors;
-    size = 23;
+    size = 20;
   };
 
 

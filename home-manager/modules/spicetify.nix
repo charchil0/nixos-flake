@@ -23,13 +23,18 @@ in
     adblock
     hidePodcasts
     shuffle # shuffle+ (special characters are sanitized out of extension names)
+    fullAppDisplay
+    keyboardShortcut
+    popupLyrics
+    history
+    beautifulLyrics
   ];
   enabledCustomApps = with spicePkgs.apps; [
     newReleases
     ncsVisualizer
   ];
   enabledSnippets = with spicePkgs.snippets; [
-    #rotating-cover-art
+    #rotating-coverart
     pointer
   ];
 
@@ -44,6 +49,6 @@ in
    # colorScheme = "forest";
 
     theme = spicePkgs.themes.sleek;
-    colorScheme = "elementary";
+    colorScheme = "wealthy";
   };
 }

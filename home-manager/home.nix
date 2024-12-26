@@ -20,7 +20,7 @@
   ];
   home.stateVersion = "24.11";
   home.packages = with pkgs;[
-    inputs.zen-browser.packages."${system}"
+    inputs.zen-browser.packages."${system}".default
     maple-mono
     maple-mono-NF
     gruvbox-kvantum
