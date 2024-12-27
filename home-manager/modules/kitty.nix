@@ -5,9 +5,8 @@
   programs.kitty.extraConfig = ''
     font_family      CaskaydiaCove Nerd Font Mono
     #font_family      Maple Mono NF Regular
-    bold_font        auto
-    italic_font      auto
-    bold_italic_font auto
+bold_font        Maple Mono NF Regular
+italic_font      Maple Mono NF Regular
     tab_bar_style hidden
     background_opacity .7
 

@@ -21,6 +21,27 @@
 '';
 
 
+".config/rofi/win-config.rasi".text = ''
+
+
+      @theme "~/.config/rofi/theme.rasi"
+
+      window {
+          height:                      12em;
+          width:                       38em;
+          transparency:                "real";
+          fullscreen:                  false;
+          enabled:                     true;
+          cursor:                      "default";
+          spacing:                     0em;
+          padding:                     0em;
+          border-color:                @main-br;
+          background-color:            @main-bg;
+      }
+
+'';
+
+
 
     ".config/rofi/launch.rasi".text = ''
       // Config //

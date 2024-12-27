@@ -116,6 +116,8 @@
   waybar
   yt-dlp
   zathura
+
+  discord-canary
   
   ];
 

@@ -26,7 +26,7 @@
       "$mainMod, Tab, exec, $scrPath/rofilaunch.sh w"
       "$mainMod+Shift, E, exec, $scrPath/rofilaunch.sh f"
       "$mainMod, P, exec, playerctl play-pause --player spotify"
-      "$mainMod, Print, exec, $scrPath/screenshot.sh p"
+      ", Print, exec, $scrPath/screenshot.sh p"
       "$mainMod+Alt, G, exec, $scrPath/gamemode.sh"
       "$mainMod+Alt, Right, exec, $scrPath/swwwallpaper.sh -n"
       "$mainMod+Alt, Left, exec, $scrPath/swwwallpaper.sh -p"

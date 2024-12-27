@@ -70,7 +70,7 @@
         "$file" = "thunar";
         "$file_terminal" = "kitty yazi";
         "$browser" = "zen";
-        "$t_sec" = "alacritty";
+        "$t_sec" = "ghostty";
         "$pdf_reader" = "zathura";
         "$scrPath" = "~/.local/share/bin";
       };
@@ -202,6 +202,7 @@
         "opacity 0.9 0.9,class:^(code-url-handler)$"
         "opacity 0.80 0.80,class:^(code-insiders-url-handler)$"
         "opacity 0.80 0.80 ,class:^(kitty)$"
+        "opacity 0.80 0.80 ,class:^(com.mitchellh.ghostty)$"
         "opacity 0.70 0.70,class:^(st)$"
         "opacity 0.70 0.70,class:^(alacritty)$"
         "opacity 0.80 0.80,class:^(org.kde.dolphin)$"

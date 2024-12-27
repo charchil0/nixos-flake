@@ -17,10 +17,13 @@
     ./modules/tmux.nix
     ./modules/hyprland/default.nix
     ./modules/rofi.nix
+    #./modules/ghostty.nix
   ];
   home.stateVersion = "24.11";
   home.packages = with pkgs;[
     inputs.zen-browser.packages."${system}".default
+inputs.ghostty.packages.x86_64-linux.default
+
     maple-mono
     maple-mono-NF
     gruvbox-kvantum
@@ -28,7 +31,6 @@
 
   home.file = { };
 
-  programs.home-manager.enable = true;
   programs.neovim = {
     defaultEditor = true;
     enable = true;

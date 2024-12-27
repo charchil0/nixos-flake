@@ -7,13 +7,14 @@
     spicetify-nix.url = "github:Gerg-L/spicetify-nix";
     spicetify-nix.inputs.nixpkgs.follows = "nixpkgs";
     hyprland.url = "github:hyprwm/Hyprland";
+    ghostty.url = "github:ghostty-org/ghostty";
     home-manager = {
       url = "github:nix-community/home-manager";
       inputs.nixpkgs.follows = "nixpkgs";
     };
   };
 
-  outputs = { nixpkgs, home-manager, zen-browser, hyprland, ... }@inputs:
+  outputs = { nixpkgs, home-manager, zen-browser, hyprland,ghostty, ... }@inputs:
     let
       system = "x86_64-linux";
       pkgs = nixpkgs.legacyPackages.${system};
@@ -23,7 +24,7 @@
         inherit pkgs;
         modules = [ ./home.nix ];
         extraSpecialArgs = {
-          inherit inputs system zen-browser hyprland;
+          inherit inputs system zen-browser hyprland ghostty;
         };
       };
     };
