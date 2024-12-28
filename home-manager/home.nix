@@ -18,6 +18,7 @@
     ./modules/hyprland/default.nix
     ./modules/rofi.nix
     #./modules/ghostty.nix
+    #./modules/thunderbird.nix
   ];
   home.stateVersion = "24.11";
   home.packages = with pkgs;[

@@ -30,7 +30,7 @@
     reaper
 
     #Rust
-    rustup
+    #rustup
     cargo
 
     #Password Manager
@@ -109,7 +109,8 @@
   motrix
   nix-ld-rs
   nixd
-  rust-analyzer
+  #rust-analyzer
+  rustup
   stylua
   vale
   vlc
@@ -117,6 +118,7 @@
   yt-dlp
   zathura
 
+  thunderbird
   discord-canary
   
   ];
