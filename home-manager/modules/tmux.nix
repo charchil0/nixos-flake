@@ -64,7 +64,7 @@
       bind i send-keys C-l
 
       #set mouse support 
-      set -g mouse off
+      set -g mouse on
 
       #set vim-mode
       #set-window-option -g mode-keys vi

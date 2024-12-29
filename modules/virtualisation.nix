@@ -9,7 +9,13 @@
   ];
 
 
-virtualisation.libvirtd = {
+virtualisation = {
+
+  docker = {
+  enable = true;
+  enableOnBoot = false;
+  };
+libvirtd = {
   enable = true;
   qemu = {
     package = pkgs.qemu_kvm;
@@ -23,6 +29,7 @@ virtualisation.libvirtd = {
       }).fd]; # firmware disk image file extension used by qemu to boot vms in uefi
     };
   };
+};
 };
 
 

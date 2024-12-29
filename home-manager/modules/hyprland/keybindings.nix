@@ -34,7 +34,7 @@
       "$mainMod+Shift, R, exec, pkill -x rofi || $scrPath/wallbashtoggle.sh -m"
       #"$mainMod+Shift, T, exec, pkill -x rofi || $scrPath/themeselect.sh"
       "$mainMod+Shift, A, exec, pkill -x rofi || $scrPath/rofiselect.sh"
-      "$mainMod+Shift, W, exec, pkill -x rofi || $scrPath/rofi_test.sh"
+      "$mainMod+Shift, W, exec,waypaper"
       "$mainMod, V, exec, pkill -x rofi || $scrPath/cliphist.sh c"
       "$mainMod, J, movefocus, d"
       "$mainMod, K, movefocus, u"

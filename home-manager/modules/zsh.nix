@@ -127,6 +127,9 @@ in
   home.file = {
     ".zshrc".text = ''
 
+
+source $HOME/.local/share/bin/_zsh-completions
+
   source $HOME/.config/zsh-theme-powerlevel10k/powerlevel10k.zsh-theme
    [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 

@@ -1,16 +1,19 @@
 { config, lib, pkgs, ... }:
 {
-
   environment.systemPackages = with pkgs; [
 
     #Browsers
     chromium
+    tor-browser
     qutebrowser
     brave
     librewolf
     home-manager
     lua
+    waypaper
     lua-language-server
+    fish
+    bat
     #ffmpeg
 
     #System Tools
@@ -24,6 +27,8 @@
     envsubst
     blueman
     lazygit
+
+    docker-compose
 
     #Developement Tools
     nodejs
