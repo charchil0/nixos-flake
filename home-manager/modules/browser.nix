@@ -16,11 +16,23 @@
         name = "default";
         isDefault = true;
 
+search.engines = {
+        "du" = {
+          urls = [{
+            template = "https://duckduckgo.com/?q={searchTerms}";
+          }];
+        };
+        "nix" = {
+          urls = [{
+            template = "https://search.nixos.org/packages?query={searchTerms}";
+          }];
+        };
+      };
 
 
 
         settings = {
-          "browser.startup.homepage" = "https://youtube.com";
+          #"browser.startup.homepage" = "https://youtube.com";
           "browser.search.defaultenginename" = "DuckDuckGo";
           "browser.search.order.1" = "DuckDuckGo";
 

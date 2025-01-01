@@ -80,7 +80,7 @@ in
     autosuggestion.enable = true;
     syntaxHighlighting.enable = true;
     shellAliases = myAliases; # Use the aliases list here
-#promptInit = "source ${pkgs.zsh-powerlevel10k}/share/zsh-powerlevel10k/powerlevel10k.zsh-theme";
+    #promptInit = "source ${pkgs.zsh-powerlevel10k}/share/zsh-powerlevel10k/powerlevel10k.zsh-theme";
 
 
     history = {
@@ -100,6 +100,7 @@ in
         #"sudo"
         "copyfile"
         "dirhistory"
+#"fast-syntax-highlighting"
       ];
     };
 
@@ -130,7 +131,7 @@ in
 
 source $HOME/.local/share/bin/_zsh-completions
 
-  source $HOME/.config/zsh-theme-powerlevel10k/powerlevel10k.zsh-theme
+  #source $HOME/.config/zsh-theme-powerlevel10k/powerlevel10k.zsh-theme
    [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
       # Install packages from Nixpkgs Unstable (function niu)
@@ -200,8 +201,8 @@ bindkey -v
 
 # Function to paste from the clipboard in normal mode
 function vi-paste-clipboard() {
-    local content=$(wl-paste) # Get the clipboard content
-    LBUFFER+="$content" # Append it to the left buffer (where command is typed)
+    local content=$(wl-paste) 
+    LBUFFER+="$content" 
 }
 
 # Bind the function to the 'p' key in Vim mode
@@ -235,6 +236,8 @@ function zle-keymap-select() {
   # Enable FZF
   programs.fzf = {
     enable = true;
+    #keybindings = true;
+    #fuzzyCompletion = true;
   };
 
   programs.zoxide = {
@@ -246,8 +249,6 @@ function zle-keymap-select() {
     zsh
     zsh-autosuggestions
     zsh-syntax-highlighting
-    zoxide
-    fzf
     fd
     nix-zsh-completions
   ];

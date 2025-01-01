@@ -1,4 +1,4 @@
-{ config, lib,inputs, pkgs, ... }:
+{  ... }:
 {
   imports =
     [
@@ -23,9 +23,11 @@
 
 
   hardware = {
+
+
     graphics.enable = true;
     bluetooth = {
-      enable = true;
+      enable = false;
       powerOnBoot = false;
       settings = {
         General = {

@@ -1,7 +1,11 @@
-{ config, lib, pkgs, ... }:
+{ ... }:
 {
   boot = {
+
+#zswap.enable = true;
+
     kernelParams = [ "nohibernate" "noquiet" "debug" ];
+    #kernelModules = ["zswap"];
     tmp.cleanOnBoot = true;
 
     loader = {

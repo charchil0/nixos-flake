@@ -1,4 +1,4 @@
-{ config, lib, pkgs, ... }:
+{ pkgs, ... }:
 {
   environment.systemPackages = with pkgs; [
 
@@ -14,7 +14,10 @@
     lua-language-server
     fish
     bat
-    #ffmpeg
+    obsidian
+
+
+conda
 
     #System Tools
     unzip
@@ -28,11 +31,11 @@
     blueman
     lazygit
 
-    docker-compose
 
     #Developement Tools
     nodejs
     reaper
+    #davinci-resolve
 
     #Rust
     #rustup
