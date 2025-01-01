@@ -23,6 +23,7 @@
         "wl-paste --type text --watch cliphist store"
         "wl-paste --type image --watch cliphist store"
         "swww-daemon --format xrgb && swww restore"
+        #"tmux new-session -d -s 0"
         #$scrPath/batterynotify.sh # battery notification"
       ];
 

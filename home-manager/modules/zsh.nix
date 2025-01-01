@@ -1,6 +1,7 @@
 { config, pkgs, ... }:
 let
 
+
   # Define aliases in the correct format for Home Manager
   myAliases = {
     grep = "grep --color=auto";
@@ -74,6 +75,10 @@ in
 {
   # Enable Zsh
 
+programs.nix-your-shell ={
+enable = true;
+
+}; 
   programs.zsh = {
     enable = true;
     enableCompletion = true;
@@ -105,12 +110,13 @@ in
     };
 
     # Configure the prompt theme with Oh My Posh
-    #initExtra = ''
+    # initExtra = ''
     #  eval "$($HOME/.local/bin/oh-my-posh init zsh --config $HOME/dotfiles/oh-my-posh/themes/negligible.omp.json)"
-    #'';
+    # '';
 
     # Environment variables and shell settings
   };
+
 
   # home.sessionVariables = {
   #   GEM_HOME = "$HOME/.gem";
@@ -131,7 +137,9 @@ in
 
 source $HOME/.local/share/bin/_zsh-completions
 
+
   #source $HOME/.config/zsh-theme-powerlevel10k/powerlevel10k.zsh-theme
+source ${pkgs.zsh-powerlevel10k}/share/zsh-powerlevel10k/powerlevel10k.zsh-theme
    [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
       # Install packages from Nixpkgs Unstable (function niu)
@@ -185,6 +193,11 @@ source $HOME/.local/share/bin/_zsh-completions
       function cgdh(){
         git clone --depth 1 $1
       }
+
+
+
+
+
 
       # Bun environment variables (if using Bun package manager)
       [ -s "/home/viola/.bun/_bun" ] && source "/home/viola/.bun/_bun"
