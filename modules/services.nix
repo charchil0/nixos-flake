@@ -7,13 +7,24 @@
         enable = true;
         powertop.enable = true;
 
+  cpuFreqGovernor = "performance";
+
       };
 
   # Services
   services = {
 
     thermald.enable = true;
-    power-profiles-daemon.enable = false;
+    power-profiles-daemon.enable = true;
+
+    upower = {
+      enable = true;
+      percentageLow = 20;
+      percentageCritical = 5;
+      percentageAction = 3;
+      criticalPowerAction = "PowerOff";
+    };
+
     auto-cpufreq = {
       enable = true;
       settings = {
@@ -44,14 +55,17 @@
         CPU_MIN_PERF_ON_BAT = 0;
         CPU_MAX_PERF_ON_BAT = 50;
 
-        CPU_BOOST_ON_AC = 1;
-        CPU_BOOST_ON_BAT = 0;
+      CPU_BOOST_ON_AC = 1;
+      CPU_BOOST_ON_BAT = 0;
 
         CPU_HWP_DYN_BOOST_ON_AC = 1;
         CPU_HWP_DYN_BOOST_ON_BAT = 0;
 
         START_CHARGE_THRESH_BAT0 = 40; # 40 and bellow it starts to charge
         STOP_CHARGE_THRESH_BAT0 = 70; # 80 and above it stops charging
+
+      PLATFORM_PROFILE_ON_AC = "performance";
+      PLATFORM_PROFILE_ON_BAT = "performance";
 
       };
     };

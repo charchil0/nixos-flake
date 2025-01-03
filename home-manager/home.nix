@@ -1,29 +1,27 @@
-{ config, pkgs, system, inputs, ... }:
+{ pkgs, system, inputs, ... }:
 
 {
   home.username = "viola";
   home.homeDirectory = "/home/viola";
   imports = [
+    ./modules/shell/default.nix
     ./modules/spicetify.nix
-    ./modules/zsh.nix
     ./modules/themes/gtk.nix
     ./modules/browser.nix
     ./modules/fonts.nix
     ./modules/waybar.nix
-    ./modules/kitty.nix
     ./modules/dunst.nix
     ./modules/btop.nix
     ./modules/fastfetch.nix
     ./modules/tmux.nix
     ./modules/hyprland/default.nix
     ./modules/rofi.nix
-    #./modules/ghostty.nix
-    #./modules/thunderbird.nix
+    ./modules/terminals/default.nix
   ];
-  home.stateVersion = "24.11";
+  home.stateVersion = "24.05";
   home.packages = with pkgs;[
     inputs.zen-browser.packages."${system}".default
-inputs.ghostty.packages.x86_64-linux.default
+    inputs.ghostty.packages.x86_64-linux.default
 
     maple-mono
     maple-mono-NF

@@ -83,9 +83,9 @@
           "browser.aboutConfig.showWarning" = true;
           "browser.compactmode.show" = true;
           "browser.cache.disk.enable" = false; # Be kind to hard drive
-          "mousewheel.default.delta_multiplier_x" = 20;
-          "mousewheel.default.delta_multiplier_y" = 20;
-          "mousewheel.default.delta_multiplier_z" = 20;
+          "mousewheel.default.delta_multiplier_x" = 30;
+          "mousewheel.default.delta_multiplier_y" = 40;
+          "mousewheel.default.delta_multiplier_z" = 40;
           "widget.disable-workspace-management" = true;
         };
         search = {
