@@ -57,6 +57,7 @@
   environment.variables = {
        QT_STYLE_OVERRIDE="kvantum";
     QT_QPA_PLATFORMTHEME = "qt5ct";     
+     MANPAGER = "nvim +Man!";
   };
 
   # programs.hyprland = {

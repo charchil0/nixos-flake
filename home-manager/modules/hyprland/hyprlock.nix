@@ -107,14 +107,15 @@ label {
 # uptime
 label {
     monitor =
-    text = cmd[update:60000] echo "<b> "$(uptime -p)" </b>"
-    #color = $color12
-    font_size = 18
-    font_family = JetBrains Mono Nerd Font Mono ExtraBold
+    text = cmd[update:60000] echo "<b> "$(~/.local/share/bin/uptime.sh)" </b>"
+    color = $color12
+    font_size = 24
+    font_family = JetBrains Mono Nerd Font 10
     position = 0, 0
     halign = right
     valign = bottom
 }
+
 
 '';
 
