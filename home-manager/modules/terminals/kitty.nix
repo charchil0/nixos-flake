@@ -28,7 +28,172 @@
 
 
 
-        # themes
+
+
+# #graphite mono
+# # The basic colors
+# foreground              #D9D9D9
+# #background              #262626
+# selection_foreground    #262626
+# selection_background    #A6A6A6
+#
+# # Cursor colors
+# cursor                  #A6A6A6
+# cursor_text_color       #D9D9D9
+#
+# # URL underline color when hovering with mouse
+# url_color               #D9D9D9
+#
+# # Kitty window border colors
+# active_border_color     #595959
+# inactive_border_color   #595959
+# bell_border_color       #595959
+#
+# # OS Window titlebar colors
+# wayland_titlebar_color system
+# macos_titlebar_color system
+#
+# # Tab bar colors
+# active_tab_foreground   #D9D9D9
+# active_tab_background   #262626
+# inactive_tab_foreground #D9D9D9
+# inactive_tab_background #262626
+# tab_bar_background      #D9D9D9
+#
+# # Colors for marks (marked text in the terminal)
+# mark1_foreground #262626
+# mark1_background #404040
+# mark2_foreground #262626
+# mark2_background #262626
+# mark3_foreground #262626
+# mark3_background #A6A6A6
+#
+# # The 16 terminal colors
+#
+# # black
+# color0 #404040
+# color8 #404040
+#
+# # red
+# color1 #D9D9D9
+# color9 #D9D9D9
+#
+# # green
+# color2  #D9D9D9
+# color10 #D9D9D9
+#
+# # yellow
+# color3  #595959
+# color11 #595959
+#
+# # blue
+# color4  #A6A6A6
+# color12 #A6A6A6
+#
+# # magenta
+# color5  #A6A6A6
+# color13 #A6A6A6
+#
+# # cyan
+# color6  #A6A6A6
+# color14 #A6A6A6
+#
+# # white
+# color7  #D9D9D9
+# color15 #D9D9D9
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# # gruvbox-dark colorscheme for kitty
+# # snazzy theme used as base
+#
+# cursor                  #928374
+# cursor_text_color       background
+#
+# visual_bell_color       #8ec07c
+# bell_border_color       #8ec07c
+#
+# active_border_color     #d3869b
+# inactive_border_color   #665c54
+#
+# active_tab_foreground   #fbf1c7
+# active_tab_background   #665c54
+# inactive_tab_foreground #a89984
+# inactive_tab_background #3c3836
+#
+# foreground              #ebdbb2
+# #background              #272727
+# selection_foreground    #655b53
+# selection_background    #ebdbb2
+# url_color               #d65c0d
+#
+# # black
+# color0   #272727
+# color8   #928373
+#
+# # red
+# color1   #cc231c
+# color9   #fb4833
+#
+# # green
+# color2   #989719
+# color10  #b8ba25
+#
+# # yellow
+# color3   #d79920
+# color11  #fabc2e
+#
+# # blue
+# color4  #448488
+# color12 #83a597
+#
+# # magenta
+# color5   #b16185
+# color13  #d3859a
+#
+# # cyan
+# color6   #689d69
+# color14  #8ec07b
+#
+# # white
+# color7   #a89983
+# color15  #ebdbb2
+
+
+
+
+
+
+
+
+
+
+
+
+        # #tokyonight
+        # # themes
         # #foreground              #FFFFFF
         # #background              #070408
         # selection_foreground    #070408
@@ -63,10 +228,11 @@
         # # white
         # color7      #FFCCEA
         # color15     #F0AAD4
-        #
 
-        #Decay Green
 
+
+
+        Decay Green
         #background #0d0f18
         foreground #a5b6cf
         # Black
@@ -99,6 +265,9 @@
         # Selection highlight
         selection_foreground #a5b6cf
         selection_background #1c1e27
+
+
+
 
 
         # # vim:ft=kitty

@@ -17,6 +17,7 @@
     ./modules/hyprland/default.nix
     ./modules/rofi.nix
     ./modules/terminals/default.nix
+    #./modules/yazi.nix
   ];
   home.stateVersion = "24.05";
   home.packages = with pkgs;[

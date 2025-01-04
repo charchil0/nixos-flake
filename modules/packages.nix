@@ -128,6 +128,9 @@ conda
 
   thunderbird
   discord-canary
+
+neovide
+alacritty
   
   ];
 

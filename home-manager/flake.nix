@@ -12,6 +12,10 @@
       url = "github:nix-community/home-manager";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+    # yazi-plugins = {
+    #   url = "github:yazi-rs/plugins";
+    #   flake = false;
+    # };
   };
 
   outputs = { nixpkgs, home-manager, zen-browser, hyprland,ghostty, ... }@inputs:
