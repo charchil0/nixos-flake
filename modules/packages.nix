@@ -35,7 +35,7 @@ conda
     #Developement Tools
     nodejs
     reaper
-    #davinci-resolve
+    davinci-resolve
 
     #Rust
     #rustup
